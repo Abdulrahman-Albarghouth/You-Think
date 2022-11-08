@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Udemy Sans';
+    font-style: normal;
+    font-weight: 400;
+    /* To match token @font-weight-normal */
+    font-display: fallback;
+    src: local('Udemy Sans Regular'),
+        local('UdemySans-Regular'),
+        url('https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Udemy Sans';
+    font-style: normal;
+    font-weight: 700;
+    /* To match token @font-weight-bold */
+    font-display: fallback;
+    src: local('Udemy Sans Bold'),
+        local('UdemySans-Bold'),
+        url('https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2') format('woff2');
+}
+
+
+body {
+    font-family: 'Udemy Sans';
+}
+
+#udemyLogo {
+    width: 91px;
+    height: 34px;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #1c1d1f;
+    padding: 15px;
+    border: 1px solid #e8ebed;
+
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 15px 20px;
+    flex-grow: 1;
+
+
+}
+
+.searchBox input {
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.searchBox input::placeholder {
+    font-size: 14px;
+    color: #6a6f73;
+}
+
+.searchBox span {
+    opacity: 0.5;
+}
+
+.searchBox input:focus+span {
+    opacity: 0.8;
+}
+
+#profileButeam {
+    width: 36px;
+    height: 36px;
+    color: white;
+    background-color: #1c1d1f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.alarm {
+    width: 10px;
+    height: 10px;
+    background-color: #a435f0;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+#nav {
+    background-color: #1c1d1f;
+    padding: 12px 20px;
+    position: relative;
+}
+
+#nav>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+#nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    transition: 0.2s all linear;
+    
+}
+#nav>ul>:hover a {
+    text-decoration: none;
+    color: #1c1d1f;
+    background-color: #f0f0f0;
+}
+
+
+#nav>ul>li>ul {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+    gap: 20px;
+    background-color: #f0f0f0;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+#nav>ul>li:hover ul {
+    display: inline-flex;
+
+}
+
+#nav>ul>li>ul a {
+    text-decoration: none;
+    color: #1c1d1f;
+    padding: 10px;
+    transition: 0.2s all linear;
+
+
+}
+#nav>ul>li>ul a:hover {
+    text-decoration: none;
+    background-color: #1c1d1f;
+    color: #f0f0f0;
+    padding: 10px;
+}
+
+#heroSectioin {
+
+    min-height: 400px;
+    background-image: linear-gradient(140deg, yellow 60%, white 60%);
+}
+.card-footer-table{
+    color: orange;
+}
+.card-footer-clock{
+    color: red;
+}

@@ -1,0 +1,31 @@
+#udemyLogo{
+    width: 91px;
+    height: 34px;
+}
+header{
+    padding: 10px 20px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#profileButeam{
+    width: 36px;
+    height: 36px;
+    color: white;
+    background-color: #1c1d1f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.alarm{
+    width: 10px;
+    height: 10px;
+    background-color: #a435f0;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
