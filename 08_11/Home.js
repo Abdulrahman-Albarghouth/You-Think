@@ -51,11 +51,11 @@
 
 // console.log(x[parseInt(Math.random()*x.length)])
 /******************************************************************************* */
-var y=[],N = parseInt((Math.random() * (100-10))+10);
+// var y=[],N = parseInt((Math.random() * (100-10))+10);
 
-for (let i = 0; i < N; i++) {
-    y.push(parseInt(Math.random() * 100));
+// for (let i = 0; i < N; i++) {
+//     y.push(parseInt(Math.random() * 100));
     
-}
+// }
 
-console.log(y);
+// console.log(y);
