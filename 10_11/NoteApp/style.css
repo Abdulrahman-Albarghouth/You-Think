@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.input-div {
+    width: 50%;
+    margin-top: 10%;
+}
+
+#todo-input {
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    width: 80%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#todo-input:focus-visible{
+    border: 2px solid rgb(138, 138, 138);
+    outline:none;
+    box-shadow: 0px 3px 20px rgb(79, 79, 79);
+}
+
+#input-btn {
+    background-color: rgb(241, 241, 241);
+    padding: 18px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#input-btn:active {
+    background-color: rgb(178, 178, 178);
+}
+.todoes{
+    width: 50%;
+    padding: 20px 0;
+    background-color:  burlywood;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 ;
+    background-color: bisque;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    height: 50px;
+}
+
+svg {
+    width: 18px;
+    margin: 0 5px;
+
+}
+.div-btn {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.btns {
+    display: flex;
+}
