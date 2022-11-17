@@ -1,0 +1,47 @@
+.products {
+    width: 100%;
+    height: 100vh;
+    border: solid 2px black;
+    padding: 5px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 50%;
+    border: solid 1px black;
+    margin: 2px;
+  }
+  
+  .products > .cards > .card img {
+    width: 90%;
+    height: 50%;
+    padding: 5px;
+  }
+  
+  .card-info {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    line-height: 22px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  p {
+    margin: 0;
+  }
