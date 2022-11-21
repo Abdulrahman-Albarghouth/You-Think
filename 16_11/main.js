@@ -50,7 +50,7 @@ showCards(products);
 cardList.addEventListener("click", (e) => {
   e.path.map((el) => {
     if (el.tagName == "LI") {
-      window.location.href = `https://zaabta.github.io/thinkSyria/e%20commerce/single_product.html?productId=${el.id}`;
+      window.location.href = `/single_product.html?productId=${el.id}`;
     }
   });
 });
