@@ -1,4 +1,4 @@
-export const posts = [];
+const posts = [];
 let LoadMoreNum = 1;
 const postsList = document.querySelector(".posts");
 const inputLoadMore = document.getElementById("LoadMore");
@@ -21,16 +21,16 @@ const showPosts = (data) => {
     postsList.innerHTML += `
     <div id="${i}">
         <img src="${item.thumbnail}" alt=""/>
-        <div>
+        <div class="post-info">
             <h1>${item.title}</h1>
             <p>
             ${item.excerpt}
             </p>
-            <h4>
+            <h3>
             <span class="material-icons-outlined"> visibility </span>${item.views} /
             <span class="material-icons-outlined"> calendar_today </span>${item.date} /
             <span class="material-icons-outlined"> local_offer </span>${item.tags}
-            </h4>
+            </h3>
         </div>
     </div>
           `;
@@ -50,7 +50,7 @@ inputLoadMore.addEventListener("click", async (e) => {
 postsList.addEventListener("click", (e) => {
     e.path.map((el) => {
       if (el.tagName == "DIV"  && el.id ) {
-        window.location.href = `/18_11/HW/singelPost.html?postId=${el.id}`;
+        window.location.href = `/18_11/HW/singelPost.html?slug=${posts[el.id].slug}`;
       }
     });
       console.log(e.path);

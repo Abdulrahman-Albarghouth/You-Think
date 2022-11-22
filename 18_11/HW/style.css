@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .navbar {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+} 
+  div {
+    display: block;
+   }
+    .link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .navbar .link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.navbar> .link> .navbar-icon {
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.navbar .nav-menu {
+    padding: 0 1em;
+}
+
+.navbar .nav-menu  .nav-menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar .nav-menu .nav-menu-list .nav-menu-item {
+    font-size: 15pt;
+    padding: 0 0.5em;
+    text-transform: capitalize;
+    font-family:  -webkit-body;
+}
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.99em;
+    margin-block-end: 0.99em;
+    margin-inline-start: 8px;
+    margin-inline-end: 0px;
+    font-weight:bolder;
+  }
+  .h1{
+    background-color: rgb(254 249 249);
+  }
+  
+  .blog > h1 {
+    padding: 0.5vw;
+  }
+  .blog > .all {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em 0;
+    width: 100%;
+  }
+  
+  .posts {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .post {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .post-info {
+    background-color: #fff;
+    border: none;
+    border-radius: 1em;
+    font-size: 1vw;
+    height: 50%;
+    margin: 0 auto;
+    max-width: 55%;
+    padding: 0.5% 3.5%;
+    position: relative;
+    text-align: center;
+    top: -75px;
+    z-index: 0;
+    max-width: 40%;
+    top: -45px;
+  }
+  
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+   .btn {
+  
+  background-color: #05a5ea;
+    border: none;
+    border-radius: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 15%;
+  }
+  input {
+      margin-left: 42%;
+      margin-bottom: 10%;
+  }
