@@ -1,0 +1,6 @@
+._app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
