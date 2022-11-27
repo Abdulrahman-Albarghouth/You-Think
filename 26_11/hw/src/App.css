@@ -1,6 +1,12 @@
+.app{
+  margin: 100px;
+}
 ._app {
   display: flex;
   justify-content: center;
-  position: relative;
-  transition: 0.3s all ease-in-out;
+  margin-top: 50px;
+}
+.home{
+  display: grid;
+  justify-content: center;
 }

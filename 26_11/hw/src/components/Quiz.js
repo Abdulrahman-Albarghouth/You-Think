@@ -108,3 +108,4 @@ const Quiz = ({ back }) => {
 };
 
 export default Quiz;
+
