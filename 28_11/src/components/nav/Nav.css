@@ -1,0 +1,10 @@
+menu a {
+    display: inline-block;
+    padding: 10px;
+    color: #04bfad;
+    text-decoration: none;
+}
+menu a.current {
+    background-color: #04bfad;
+    color: #FFF;
+}

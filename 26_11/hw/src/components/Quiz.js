@@ -41,7 +41,7 @@ const Quiz = ({ back }) => {
     setQuestions(question.current.querySelectorAll(".question"));
   }, []);
   useEffect(() => {
-    const windowWidth = 500;
+    const windowWidth = 540;
     const distanceToQuestion = windowWidth * activeQuestion;
     Questions.forEach((question, i) => {
       question.style.transform = `translateX(-${distanceToQuestion}px)`;

@@ -15,6 +15,7 @@
     color: rgb(0, 0, 0);
     display: table-column;
     transition: 0.3s all ease-in-out;
+    padding: 20PX;
 }
 .navigation {
     position: absolute;
