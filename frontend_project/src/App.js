@@ -23,8 +23,6 @@ function App() {
       {token && 
       <Routes>
         <Route path="/" element={<Suspense><Home /></Suspense>} />
-        <Route path='/register' element={<Suspense><Register /></Suspense>} />
-        <Route path='/login' element={<Suspense><LogIn /></Suspense>} />
         <Route path='/signout' element={<Suspense><SignOut /></Suspense>} />
         <Route path='/profile' element={<Suspense><Profile /></Suspense>} />
         <Route path="*" element={<Suspense><NotFound /></Suspense>} />

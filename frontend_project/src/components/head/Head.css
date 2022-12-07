@@ -1,0 +1,9 @@
+.head, .headIcon {
+  align-items: center;
+  display: flex;
+}
+.head {
+  border-bottom: 1px solid #f3f4f5;
+  justify-content: space-between;
+  padding: 10px 15px;
+}

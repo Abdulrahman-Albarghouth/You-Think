@@ -25,7 +25,7 @@ const LogIn = () => {
         const json = await response.json()
 
         if (json.success) {
-            authCtx.signIn(json.data, json.token)
+            authCtx.logIn(json.data, json.token)
                 navigate('/')
         } else {
             window.alert(json.messages[0])
@@ -53,7 +53,7 @@ const LogIn = () => {
                                 <Link className="" to="/register">Register</Link>
                             </div>
                             <div class="col-7">
-                                <input type='button' value='Sign In' className='btn btn-dark' onClick={signIn} />
+                                <input type='button' value='LogIn' className='btn btn-dark' onClick={signIn} />
                             </div>
                         </div>
 
