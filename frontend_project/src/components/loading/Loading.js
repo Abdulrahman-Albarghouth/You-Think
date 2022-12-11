@@ -2,9 +2,9 @@ import "./Loading.css";
 
 const Loading = () => {
   return (
-    <div class="loading">
-      <div class="line">
-        <div class="inner"></div>
+    <div className="loading">
+      <div className="line">
+        <div className="inner"></div>
         <p>Loading</p>
       </div>
     </div>

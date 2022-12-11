@@ -39,33 +39,33 @@ const Register = () => {
     return (
         <div className="container">
             <div className="row">
-                <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                    <div class="Register_register__csfwh my-5 p-5">
-                        <div class="mb-4">
+                <div className="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div className="Register_register__csfwh my-5 p-5">
+                        <div className="mb-4">
                             <img width={100} src="https://ferasjobeir.com/frontend-app/static/media/logo.1bb8db420e540d66b7c4a6a8350ca833.svg" alt=""/>
                         </div>
-                        <h1 class="mb-4">Create Account</h1>
-                        <div class="form-field mb-3">
+                        <h1 className="mb-4">Create Account</h1>
+                        <div className="form-field mb-3">
                             <label htmlFor='name' className='mb-2'>Name</label>
                             <input ref={nameRef} type='text' id='name' className='form-control mb-3' />
                         </div>
-                        <div class="form-field mb-3">
+                        <div className="form-field mb-3">
                             <label htmlFor='email' className='mb-2'>Email Address</label>
                             <input ref={emailRef} type='email' id='email' className='form-control mb-3' />
                         </div>
-                        <div class="form-field mb-3">
+                        <div className="form-field mb-3">
                             <label htmlFor='password' className='mb-2'>Password</label>
                             <input ref={passwordRef} type='password' id='password' className='form-control mb-3' />
                         </div>
-                        <div class="form-field mb-3">
+                        <div className="form-field mb-3">
                             <label htmlFor='password_confirmation' className='mb-2'>Password Confirmation</label>
                             <input ref={passwordConfirmationRef} type='password' id='password_confirmation' className='form-control mb-3' />
                         </div>
-                        <div class="row mt-5 align-items-center">
-                            <div class="col-5">
+                        <div className="row mt-5 align-items-center">
+                            <div className="col-5">
                                 <Link className="w-100" to="/login">Login</Link>
                             </div>
-                            <div class="col-7">
+                            <div className="col-7">
                                 <input type='button' value='Register' className='btn btn-dark' onClick={register} />
                             </div>
                         </div>

@@ -11,7 +11,7 @@ const UserManager = ({children}) => {
         localStorage.setItem('user', JSON.stringify(userData))
         localStorage.setItem('token', userToken)
     }
-    const signOut = () => {
+    const logOut = () => {
         setUser({})
         setToken("")
         localStorage.removeItem("user")
@@ -22,7 +22,7 @@ const UserManager = ({children}) => {
             user,
             token,
             logIn,
-            signOut
+            logOut
         }}>
             {children}
         </AuthContext.Provider>

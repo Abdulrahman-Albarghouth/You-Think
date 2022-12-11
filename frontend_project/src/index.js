@@ -1,18 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import UserManager from './contexts/AuthContext';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import UserManager from "./contexts/AuthContext";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import NotificationCTX from "./contexts/AlertContextNotification";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <BrowserRouter>
-    <UserManager>
-      <App />
-    </UserManager>
+  <BrowserRouter>
+    <NotificationCTX>
+      <UserManager>
+        <App />
+      </UserManager>
+    </NotificationCTX>
   </BrowserRouter>
 );
 
