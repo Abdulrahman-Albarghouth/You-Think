@@ -26,10 +26,10 @@ const MyPosts = ({ posts }) => {
       <div className="mb-4 p-3">
         <div className="alert alert-info">My Posts</div>
         <ul className="list-group">
-          {postsData.map((post) => {
+          {postsData.map((post, i) => {
             return (
               <li
-                id={post.id}
+                key={`my-post-${post.id}-${i}`}
                 className="list-group-item d-flex align-items-center justify-content-between"
               >
                 <span className="hide-extra">{post.content}</span>

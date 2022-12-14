@@ -14,7 +14,7 @@ const Register = () => {
         const email = emailRef.current.value
         const password = passwordRef.current.value
         const passwordConfirmation = passwordConfirmationRef.current.value
-        const response = await fetch('http://ferasjobeir.com/api/users/register', {
+        const response = await fetch(`${process.env.REACT_APP_API}/users/register`, {
             method: 'POST',
             body: JSON.stringify({
                 name: name,

@@ -22,7 +22,8 @@ const UserManager = ({children}) => {
             user,
             token,
             logIn,
-            logOut
+            logOut,
+            setUser,
         }}>
             {children}
         </AuthContext.Provider>
