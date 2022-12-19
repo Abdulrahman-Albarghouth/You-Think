@@ -1,13 +1,12 @@
 import { useContext, useState } from 'react';
 import { AlertContextNotification } from '../../contexts/AlertContextNotification';
 import { AuthContext } from '../../contexts/AuthContext';
-import './NewPost.css'
+import styles from "./NewPost.module.css";
 
 
-const NewPost = ({user}) => {
-  const [postData, setPostData] = useState({})
+const NewPost = ({viewPost}) => {
   const [post, setPost] = useState("");
-  const { token } = useContext(AuthContext);
+  const { user, token } = useContext(AuthContext);
   const { toggleOn } = useContext(AlertContextNotification);
   const CreateNewPost = async ()=>{
     const response = await fetch(`${process.env.REACT_APP_API}/posts`, {
@@ -32,15 +31,15 @@ const NewPost = ({user}) => {
             comments_count: 0,
             user: user,
       }
-      setPostData(postObj)
+      viewPost(postObj);
       setPost("");
       
     }
   }
     return (
-        <div className="new">
+        <div className={styles.new}>
         <img src={user.avatar} alt={user.name} />
-        <div className="textarea">
+        <div className={styles.textarea}>
           <textarea placeholder="What is happening?" onChange={(e)=>setPost(e.target.value)} value={post} ></textarea>
           <button className="btn btn-primary" onClick={CreateNewPost}>Create Post</button>
         </div>

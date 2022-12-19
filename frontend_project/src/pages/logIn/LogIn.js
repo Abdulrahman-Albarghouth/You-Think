@@ -2,6 +2,7 @@ import { useContext, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AlertContextNotification } from '../../contexts/AlertContextNotification'
 import { AuthContext } from '../../contexts/AuthContext'
+import styles from "./LogIn.module.css";
 
 const LogIn = () => {
     const emailRef = useRef()
@@ -36,16 +37,16 @@ const LogIn = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                    <div className="my-5 p-5">
-                        <div className=" mb-4">
+                    <div className={`my-5 p-5 ${styles.login}`}>
+                        <div className={`${styles.logo} mb-4`}>
                             <img width={100} src="https://ferasjobeir.com/frontend-app/static/media/logo.1bb8db420e540d66b7c4a6a8350ca833.svg" alt=""/>
                         </div>
-                        <h1 className=" mb-4">Login</h1>
-                        <div className="form-field mb-3">
+                        <h1 className={`mb-4 ${styles.title}`}>Login</h1>
+                        <div className={`mb-3 ${styles.formField}`}>
                             <label htmlFor='email' className='mb-2'>Email Address</label>
                             <input ref={emailRef} type='email' id='email' className='form-control mb-3' />
                         </div>
-                        <div className="form-field mb-3">
+                        <div className={`mb-3 ${styles.formField}`}>
                             <label htmlFor='password' className='mb-2'>Password</label>
                             <input ref={passwordRef} type='password' id='password' className='form-control mb-3' />
                         </div>
@@ -54,7 +55,7 @@ const LogIn = () => {
                                 <Link className="" to="/register">Register</Link>
                             </div>
                             <div className="col-7">
-                                <input type='button' value='LogIn' className='btn btn-dark' onClick={signIn} />
+                                <input type='button' value='LogIn' className='btn btn-primary w-100' onClick={signIn} />
                             </div>
                         </div>
 

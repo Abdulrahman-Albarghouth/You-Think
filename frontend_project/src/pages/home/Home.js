@@ -1,16 +1,14 @@
 import Head from "../../components/head/Head";
 import Posts from "../../components/posts/Posts";
-import "./Home.css";
+import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <>
-      <div className="wrapper">
-        <div className="content">
+        <div className={styles.content}>
           <Head page_name="Home" />
           <Posts />
         </div>
-      </div>
     </>
   );
 };

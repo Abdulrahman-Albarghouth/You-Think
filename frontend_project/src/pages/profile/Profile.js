@@ -1,7 +1,7 @@
 import Head from "../../components/head/Head";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import MyPosts from "../../components/myPosts/MyPosts";
 import { AlertContextNotification } from "../../contexts/AlertContextNotification";
@@ -49,20 +49,20 @@ const Profile = () => {
 
   return (
     <>
-      <div className="content">
+      <div className={styles.content}>
         <Head page_name="Profile" />
         {!data.name && <Loading />}
         {data.name && (
           <form onSubmit={updateProfile} method="put">
-            <div className="p-3 mb-4 bottom-border">
+            <div className={`p-3 mb-4 ${styles.bottomBorder}`}>
               <div className="alert alert-info">My Information</div>
-              <div className="form-field mb-3 person-avatar">
+              <div className={`${styles.formField} mb-3 ${styles.personAvatar}`}>
                 <label for="avatar" className="mx-auto my-2 d-block w-25">
                   <img
                     src={newData?.avatar}
                     className="d-block mx-auto rounded-circle w-100"
                   />
-                  <div className="icon">
+                  <div className={styles.icon}>
                     <CameraAltIcon />
                   </div>
                 </label>
@@ -73,7 +73,7 @@ const Profile = () => {
                   className="position-absolute"
                 />
               </div>
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <label for="name" className="mb-2">
                   <small>
                     Name <span className="text-danger">*</span>
@@ -93,7 +93,7 @@ const Profile = () => {
                   }}
                 />
               </div>
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <label for="email" className="mb-2">
                   <small>
                     Email Address <span className="text-danger">*</span>
@@ -113,7 +113,7 @@ const Profile = () => {
                   }}
                 />
               </div>
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <label for="password" className="mb-2">
                   <small>
                     Password <span className="text-danger">*</span>
@@ -126,7 +126,7 @@ const Profile = () => {
                   className="form-control mb-3"
                 />
               </div>
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <label for="new_password" className="mb-2">
                   <small>New Password</small>
                 </label>
@@ -137,7 +137,7 @@ const Profile = () => {
                   className="form-control"
                 />
               </div>
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <label for="password_confirmation" className="mb-2">
                   <small>New Password Confirmation</small>
                 </label>
@@ -149,7 +149,7 @@ const Profile = () => {
                 />
               </div>
               <input type="hidden" name="_method" value="put" />
-              <div className="form-field mb-3">
+              <div className={`mb-3 ${styles.formField}`}>
                 <button type="submit" className="btn btn-primary">
                   Update Profile
                 </button>

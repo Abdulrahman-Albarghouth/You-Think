@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { AuthContext } from './contexts/AuthContext';
 import './App.css'
 import SimpleSnackbar from './components/notifications/Notifications';
+import Navbar from './components/navbar/Navbar';
 
 const Home = React.lazy(() => import("./pages/home/Home"));
 const Register = React.lazy(() => import( "./pages/register/Register"))
@@ -15,6 +16,7 @@ function App() {
   const { token } = useContext(AuthContext)
   return (
     <>
+    
       {!token && 
       <Routes>
         <Route path='/register' element={<Suspense><Register /></Suspense>} />
@@ -22,14 +24,15 @@ function App() {
         <Route path="*" element={<Suspense><Register /></Suspense>} />
       </Routes>
       }
-      {token && <>
+      {token &&
+        <Navbar>
         <Routes>
           <Route path="/" element={<Suspense><Home /></Suspense>} />
           <Route path='/logout' element={<Suspense><LogOut /></Suspense>} />
           <Route path='/profile' element={<Suspense><Profile /></Suspense>} />
           <Route path="*" element={<Suspense><NotFound /></Suspense>} />
         </Routes>
-      </>
+        </Navbar>
       }
       <SimpleSnackbar/>
     </>

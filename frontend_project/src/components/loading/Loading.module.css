@@ -17,7 +17,7 @@
   background: #0077b5;
   animation: slide 2s ease-in-out infinite;
 }
-p{
+.text{
     display: flex;
     justify-content: center;
 }

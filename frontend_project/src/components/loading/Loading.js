@@ -1,11 +1,11 @@
-import "./Loading.css";
+import styles from "./Loading.module.css";
 
 const Loading = () => {
   return (
-    <div className="loading">
-      <div className="line">
-        <div className="inner"></div>
-        <p>Loading</p>
+    <div className={styles.loading}>
+      <div className={styles.line}>
+        <div className={styles.inner}></div>
+        <p className={styles.text}>Loading</p>
       </div>
     </div>
   );

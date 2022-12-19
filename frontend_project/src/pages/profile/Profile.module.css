@@ -1,19 +1,19 @@
-.bottom-border {
+.bottomBorder {
     border-bottom: 1px solid #f3f4f5;
 }
-.person-avatar label {
+.personAvatar label {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
 }
-.form-field label {
+.formField label {
     font-size: 1.2em;
 }
-.person-avatar label:hover .icon {
+.personAvatar label:hover .icon {
     background-color: rgba(0,0,0,.3);
     opacity: 1;
 }
-.person-avatar label .icon {
+.personAvatar label .icon {
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -26,7 +26,7 @@
     transition: all .2s ease;
     width: 100%;
 }
-.person-avatar input {
+.personAvatar input {
     opacity: 0;
     z-index: -5;
 }
