@@ -1,5 +1,6 @@
 {
     "terminal.integrated.allowMnemonics": true,
     "editor.multiCursorModifier": "alt",
-    "liveServer.settings.multiRootWorkspaceName": "You-Think"
+    "liveServer.settings.multiRootWorkspaceName": "You-Think",
+    "liveServer.settings.port": 5501
 }
